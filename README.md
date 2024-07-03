@@ -11,8 +11,15 @@ This project provides a client module for broadcasting transactions and monitori
 ## Setup
 
 1. **Install dependencies**:
+
    ```bash
    npm install axios
+   ```
+
+   **After installing Axios, run the test script to execute the example usage:**
+
+   ```bash
+   npm test
    ```
 
 ## Usage
@@ -29,4 +36,4 @@ This project provides a client module for broadcasting transactions and monitori
   PENDING: The transaction is awaiting processing. The script will continue to check the status every 5 seconds until it changes.
   DNE: The transaction does not exist. Log the message and end the execution.
 
-  **When you run index.js, it will broadcast the transaction and then continuously monitor its status until it changes from "PENDING", logging the final status to the console.**
+  - **When you run index.js, it will broadcast the transaction and then continuously monitor its status until it changes from "PENDING", logging the final status to the console.**
