@@ -24,16 +24,17 @@ This project provides a client module for broadcasting transactions and monitori
 
 ## Usage
 
-- **TransactionClient Module**
+- **TransactionClient Module :**
   The core functionality is defined in TransactionClient.js. This file contains the logic for broadcasting a transaction and monitoring its status.
 
-- **Example Script**
+- **Example Script :**
   index.js is an example script that demonstrates how to use the TransactionClient module. This example shows how the module can be integrated into another application.
 
-- **Handling Transaction Status**
-  CONFIRMED: The transaction has been processed and confirmed. No further action is needed.
-  FAILED: The transaction failed to process. Log the message and end the execution.
-  PENDING: The transaction is awaiting processing. The script will continue to check the status every 5 seconds until it changes.
-  DNE: The transaction does not exist. Log the message and end the execution.
+- **Handling Transaction Status :**
 
-  - **When you run index.js, it will broadcast the transaction and then continuously monitor its status until it changes from "PENDING", logging the final status to the console.**
+  - CONFIRMED: The transaction has been processed and confirmed. No further action is needed.
+  - FAILED: The transaction failed to process. Log the message and end the execution.
+  - PENDING: The transaction is awaiting processing. The script will continue to check the status every 5 seconds until it changes.
+  - DNE: The transaction does not exist. Log the message and end the execution.
+
+    **When you run index.js, it will broadcast the transaction and then continuously monitor its status until it changes from "PENDING", logging the final status to the console.**
