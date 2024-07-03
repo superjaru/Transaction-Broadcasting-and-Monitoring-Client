@@ -10,10 +10,15 @@ This project provides a client module for broadcasting transactions and monitori
 
 ## Setup
 
-1. **Install dependencies**:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/superjaru/Transaction-Broadcasting-and-Monitoring-Client.git
+   cd Transaction-Broadcasting-and-Monitoring-Client
+   ```
+2. **Install dependencies**:
 
    ```bash
-   npm install axios
+   npm install
    ```
 
    **After installing Axios, run the test script to execute the example usage:**
@@ -38,3 +43,14 @@ This project provides a client module for broadcasting transactions and monitori
   - DNE: The transaction does not exist. Log the message and end the execution.
 
     **When you run index.js, it will broadcast the transaction and then continuously monitor its status until it changes from "PENDING", logging the final status to the console.**
+
+- **Design Decisions, Trade-offs, and Assumptions**
+
+* Design Decisions
+
+  - Modular Structure: Utilize TransactionClient module for clear separation of concerns and reusability. Using async/await for handling HTTP requests asynchronously.
+
+* Trade-offs
+  - Dependency on Axios: Rely on Axios for strong HTTP handling, ensuring reliable server communication.
+* Assumptions
+  - Transaction Statuses: Transactions are assumed to have states like CONFIRMED, FAILED, PENDING, and DNE based on standard processing scenarios.
