@@ -44,13 +44,13 @@ This project provides a client module for broadcasting transactions and monitori
 
     **When you run index.js, it will broadcast the transaction and then continuously monitor its status until it changes from "PENDING", logging the final status to the console.**
 
-- **Design Decisions, Trade-offs, and Assumptions**
+## Design Decisions, Trade-offs, and Assumptions
 
-* Design Decisions
+- Design Decisions
 
   - Modular Structure: Utilize TransactionClient module for clear separation of concerns and reusability. Using async/await for handling HTTP requests asynchronously.
 
-* Trade-offs
+- Trade-offs
   - Dependency on Axios: Rely on Axios for strong HTTP handling, ensuring reliable server communication.
-* Assumptions
+- Assumptions
   - Transaction Statuses: Transactions are assumed to have states like CONFIRMED, FAILED, PENDING, and DNE based on standard processing scenarios.
