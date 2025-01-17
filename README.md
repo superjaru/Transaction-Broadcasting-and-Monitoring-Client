@@ -6,7 +6,7 @@ This project provides a client module for broadcasting transactions and monitori
 
 - **Broadcast Transaction**: Construct a JSON payload and send a POST request to broadcast a transaction.
 - **Monitor Transaction Status**: Utilize the transaction hash obtained from the response to periodically issue GET requests to check the transaction status until it changes from "PENDING".
-- **Error Handling**: Implement error handling for network requests and log appropriate error messages.
+- **Error Handling**: Implement error handling for network requests and log appropriatesttttttte error messages.
 
 ## Setup
 
